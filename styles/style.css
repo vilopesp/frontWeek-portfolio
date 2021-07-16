@@ -263,5 +263,9 @@ header {
   .container {
     height: auto;
   }
+  .svg-hero {
+    -webkit-transform: scale(2) rotate(25deg);
+            transform: scale(2) rotate(25deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -44,6 +44,65 @@ h4 {
     font-weight: 300;
 }
 
+.mask{
+
+    background: linear-gradient(225deg, #2DC7ED 0%, #538BF0 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.square{
+
+    display: inline-block;
+    margin-top: 64px;
+
+    font-size: 24px;
+
+    padding: 16px 24px;
+
+    position: relative;
+
+    &::after{
+        content: '';
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+
+        width: 96px;
+        height: 96px;
+
+        transform: translate(5%, -15%) rotate(60deg);
+
+        background: linear-gradient(225deg, #2DC7ED 0%, rgba(83, 139, 240, 0) 100%);
+
+        border-radius: 4px;
+        transition: .5s ease;
+
+    }
+
+    &:hover{
+        &::after{
+            transform: translate(5%, -15%) rotate(225deg);
+    
+        }
+    
+    }
+}
+
 @media screen and (max-width: 600px) {
     
     h1 {

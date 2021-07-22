@@ -1,15 +1,18 @@
 $black: #000;
-$dark-grey: #141516;
-$medium-grey: #242526;
-
+$dark-gray: #141516;
+$medium-gray: #242526;
+$line-gray: #777;
+$lighter-gray: #EEF0F0;
+$light-gray: #E6E8E8;
 $white: #FFFFFF;
-$lighter-grey: #EEF0F0;
-$light-grey: #E6E8E8;
+
 
 $primary-blue: #2DC7ED;
 $light-blue: #3ACDF1;
 $medium-blue: #26B7DB;
 
-$linear-details: linear(to right, rgba(44, 149, 246, 1), rgba(83, 139, 240, .2))
+$linear-details: linear(to right, rgba(44, 149, 246, 1), rgba(83, 139, 240, .2));
 
-
+.color-gray {
+    color: $line-grey;
+}

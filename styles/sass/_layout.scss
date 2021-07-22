@@ -12,7 +12,7 @@ header {
     width: 70vw;
     margin: 0 auto;
 
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
     display: flex;
 
     justify-content: center;
@@ -164,15 +164,62 @@ header {
     opacity: 70%;
 }
 
-// --------- MEDIA QUERIES
-@media screen and (max-width: 600px){
-    .container {
+
+
+
+
+
+
+// --------- MEDIA QUERIES ----------
+@media (max-width: 1000px) {
+    .container-content {
+        width: 85vw;
+    }
+}
+
+@media screen and (max-width: 700px){    
+    .container-content {
         height: auto;
+        flex-direction: column;
+    }
+
+    .container-content .container-image {
+        margin-top: 5rem;
+    }
+
+    .container .container-footer {
+        margin: 0 auto;
+      }
+
+    .container-content .container-presentation h1 {
+        font-size: 5rem;
+        margin: 1rem 0;
+    }
+
+    .container-content .container-presentation .h2-line1 {
+        padding-left: 7rem;
+    }
+
+    .container-content .container-presentation .h2-line2 {
+        padding-left: 12rem;
     }
 
     .svg-hero {
-        transform: scale(2) rotate(25deg);    }
-    
+        transform: scale(2) rotate(25deg);
+    }
 }
 
+@media screen and (max-width: 600px) {
+    header .logo img {
+        display: none;
+    } 
 
+    header nav {
+        position: fixed;
+        top: 0;
+        height: 20rem;
+        width: 100%;
+
+        background: black;
+    }
+}

@@ -1,12 +1,12 @@
 header {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-    padding: 3.5rem;
+
+    padding: 3rem;
 }
 
-// ---------- CONTAINER -----------
+// --- hero-container ---- //
 .container-content {
     width: 70vw;
     margin: 0 auto;
@@ -92,7 +92,7 @@ header {
     margin-left: 8px;
 }
 
-.container .container-footer {
+.container-hero .container-footer {
     padding-top: 8rem;
     margin-right: 15rem;
 
@@ -101,7 +101,7 @@ header {
     align-items: center;
 }
 
-.container .container-footer button {
+.container-hero .container-footer button {
     background: none;
     border: 0;
 
@@ -114,7 +114,7 @@ header {
     cursor: pointer;
   }
   
-.container .container-footer button:after {  
+.container-hero .container-footer button:after {  
     content: '';
     
     transition: inherit;
@@ -133,12 +133,14 @@ header {
     z-index: -1;
   }
   
-  .container .container-footer button:hover:after {
+  .container-hero .container-footer button:hover:after {
     width: calc(100% + 20px);
     border-radius: 18px;
     opacity: 0.6;
     background: $primary-blue;
   }
+
+// --- BG HERO --- //
 
 .relative {
     position: relative;
@@ -162,17 +164,28 @@ header {
     opacity: 70%;
 }
 
-// ---------- SELECTED WORKS ----------
+// --- SELECTED WORKS --- //
 
 .bb-gray{
     width: 100%;
     border-bottom: 1px solid $medium-gray;
 }
 
-.list-item{
-    max-width: 1200px;
+.works .selected-works {
+    display: flex;
+    padding: 4.5rem 5rem;
+}
+
+.works .selected-works img {
+    width: 1.3rem;
+    padding-right: 1rem;
+
+}
+
+.work-item{
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 16px 24px;
+    padding: 7rem 4rem;
 
     position: relative;
 
@@ -181,17 +194,34 @@ header {
     align-items: center;
 
     a{
+        text-decoration: none;
+
         &:hover{
-            & + .img-project{
+            & + .work-image{
                 transform: translate(-50%, -50%) translate3d(0,0,0);
                 opacity: 1;
             }
         }
     }
+
+    h3 {
+        font-size: 2.3rem;
+        padding: .5rem;
+
+
+        &:hover {
+            color: $primary-blue;
+            transition: .3s ease-in;
+        }
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
 }
 
-.img-project{
-    max-width: 720px;
+.work-image{
+    max-width: 30rem;
     border-radius: 4px;
 
     position: absolute;
@@ -207,20 +237,74 @@ header {
 
 }
 
-// ---------- GET IN TOUCH ----------
-
-.get{
-    max-width: 1200px;
-
-    margin: 0 auto;
-    padding: 16px 24px;
+// --- GET IN TOUCH ---
+.get-in {
+    padding: 14rem 5rem;
 }
 
+.get-in .get-in-touch .container-get-in {
+    padding: 0 10rem;
+}
 
+.get-in .get-in-touch {
+    display: flex;
+}
 
+.get-in .get-in-touch img {
+    width: 1.3rem;
+    padding-right: 1rem;
+}
 
+.get-in .container-get-in {
+    padding: 5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-// ---------- ANIMATIONS -----------
+.get-in .social-medias {
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 4rem;
+    }
+}
+
+.get-in .social-medias a{
+    padding-right: 2.5rem;
+
+    svg { 
+        height: 30px
+    }
+}
+
+.get-in .social-medias a svg:hover {
+    path {
+        stroke: $primary-blue;
+        transition: ease-in .2s;
+    }
+}
+
+.container-get-in .email {
+        a {
+            font-size: 2rem;
+            padding-right: 5rem;
+            font-weight: 400;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-blue;
+            }
+        }
+
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            padding-bottom: 3rem;
+        }
+}
+
+// --- ANIMATIONS ----
 
 #bg-heroline1{
     //stroke-dasharray: 100 100 !important;
@@ -228,13 +312,13 @@ header {
 }
 
 #bg-heroline2 {
-    //stroke-dasharray: 50 100 !important;
-   // animation: linha2 1s ease infinite alternate;
+    stroke-dasharray: 50 100 !important;
+    animation: linha2 1s ease infinite alternate;
 }
 
 #bg-heroline3 {
-    //stroke-dasharray: 10 100 !important;
-    //animation: linha3 2s ease infinite alternate;
+     stroke-dasharray: 10 100 !important;
+    animation: linha3 2s ease infinite alternate;
 }
 
 @keyframes linha1{
@@ -267,7 +351,7 @@ header {
 
 
 
-// --------- MEDIA QUERIES ----------
+// --------- MEDIA QUERIES ---
 @media (max-width: 1000px) {
     .container-content {
         width: 85vw;

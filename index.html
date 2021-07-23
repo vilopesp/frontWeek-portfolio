@@ -17,20 +17,20 @@
 
     <body>
         <header>
-            <nav class="left-navbar">
-                <a href="/">HOME</a>
-                <a href="###">ABOUT ME</a>
+            <nav class="left-navbar" id="#home">
+                <a href="#home">HOME</a>
+                <a href="#aboutme">ABOUT ME</a>
             </nav>
 
             <div class="logo">
-                <a href="/">
+                <a href="home">
                     <img src="/assets/logo.svg" alt="Logotipo" />
                 </a>
             </div>
 
             <nav class="right-navbar">
-                <a href="##">MY WORKS</a>
-                <a href="#">CONTACT</a>
+                <a href="#myworks">MY WORKS</a>
+                <a href="#contact">CONTACT</a>
             </nav>
         </header>
 
@@ -136,104 +136,136 @@
         </div>
 
         <!-- main content -->
+        <main>  
 
-        <div class="container hero">
-            <div class="container-content">
-                <section class="container-presentation container-item">
-                    <h3>Hi, I'm</h3>
-                    <h1>Vitória Lopes</h1>
+            <!-- hero-container -->
+            <div class="container-hero" id="aboutme">
+                <div class="container-content">
+                    <section class="container-presentation container-item">
+                        <h3>Hi, I'm</h3>
+                        <h1>Vitória Lopes</h1>
+    
+                        <h2 class="h2-line1">Front-end developer</h2>
+                        <h2 class="h2-line2">UI motion design</h2>
+    
+                        <div class="container-footer">
+                            <a href="#myworks">
+                                <button>Works →</button>
+                            </a>
 
-                    <h2 class="h2-line1">Front-end developer</h2>
-                    <h2 class="h2-line2">UI motion design</h2>
-
-                    <div class="container-footer">
-                        <button>Works →</button>
-                    </div>
-                </section>
-
-                <section class="container-image container-item">
-                    <img src="/assets/profile.svg" alt="Image Profile" />
-
-                    <div class="resume">
-                        <h3>EXPERT ON</h3>
-                        <h4>
-                            I'm a font-end developer and UI motion designer, passionate about
-                            bringing design to life.
-                        </h4>
-
-                        <div class="resume-location">
-                            <img src="/assets/location-icon.svg" alt="Icon-location" />
-
-                            <h4>Cerquilho, SP - Brazil</h4>
+                            
                         </div>
-                    </div>
-                </section>
+                    </section>
+    
+                    <section class="container-image container-item">
+                        <img src="/assets/profile.svg" alt="Image Profile" />
+    
+                        <div class="resume">
+                            <h3>EXPERT ON</h3>
+                            <h4>
+                                I'm a font-end developer and UI motion designer, passionate about
+                                bringing design to life.
+                            </h4>
+    
+                            <div class="resume-location">
+                                <img src="/assets/location-icon.svg" alt="Icon-location" />
+    
+                                <h4>Cerquilho, SP - Brazil</h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
 
-        <!-- selected works -->
-
-        <section class="works" id="section-01">
-            <div class="work-item">
-                <h2>Selected Works</h2>
-            </div>
-            <div class="work-item py-6">
-                <h5 class="color-gray mr-2">01.</h5>
-                <a href="" target="_blank"><h3>Proffy</h3></a>
-                <img src="assets/work-Proffy.svg" class="work-image" alt="Proffy Project">
-            </div>
-
-            <div class="bb-gray"></div>
-
-            <div class="work-item py-6">
-                <h5 class="color-gray mr-2">02.</h5>
-                <a href="" target="_blank"><h3>Roquet.Q</h3></a>
-                <img src="assets/work-roquetQ.svg" class="work-image" alt="Roquet.Q Project">
+            <!-- selected works -->
+            <section class="works" id="myworks">
+                <div class="selected-works">
+                    <img src="/assets/diamond-icon.svg" alt="Detal icon">
+                    <h2>Selected Works</h2>
+                </div>
                 
-            </div>
+                <div class="work-item">
+                    <h5 class="color-gray">01.</h5>
+                    <a href="https://github.com/vilopesp/proffy-nlw2">
+                        <h3>Proffy</h3>
+                    </a>
+                    <img src="assets/work-Proffy.svg" class="work-image" alt="Proffy Project">
+                </div>
 
-            <div class="bb-gray"></div>
+                <div class="bb-gray"></div>
 
-            <div class="work-item py-6">
-                <h5 class="color-gray mr-2">03.</h5>
-                <a href="" target="_blank"><h3>Portfolio FrontStart</h3></a>
-                <img src="assets/work-Portfolio.svg" class="work-image" alt="Portfolio Project">
-            </div>
+                <div class="work-item">
+                    <h5 class="color-gray">02.</h5>
+                    <a href="https://github.com/vilopesp/nlw-together-rocket.q">
+                        <h3>Roquet.Q</h3>
+                    </a>
+                    <img src="assets/work-roquetQ.svg" class="work-image" alt="Roquet.Q Project">
+                    
+                </div>
 
-        </section>
+                <div class="bb-gray"></div>
 
-        <!-- get in touch -->
+                <div class="work-item">
+                    <h5 class="color-gray">03.</h5>
+                    <a href="https://github.com/vilopesp/frontStart-portfolio2">
+                        <h3>Portfolio FrontStart</h3>
+                    </a>
+                    <img src="assets/work-Portfolio.svg" class="work-image" alt="Portfolio Project">
+                </div>
 
-        <section class="get-in-touch">
-            <h2>Get in Touch</h2>
+            </section>
 
-            <div class="social-medias">
-                <a href="www.facebook.com">
-                    <img src="/assets/facebook-icon.svg" alt="Facebook">
-                </a>
+            <!-- get in touch -->
+            <section class="get-in" id="contact">
 
-                <a href="www.twitter.com">
-                    <img src="/assets/twitter-icon.svg" alt="Twitter">
-                </a>
+                <div class="get-in-touch">
+                    <img src="/assets/diamond-icon.svg" alt="Detal icon">
+                    <h2>Get in Touch</h2>
+                </div>
 
-                <a href="www.instagram.com">
-                    <img src="/assets/instagram-icon.svg" alt="Instagram">
-                </a>
+                <div class="container-get-in">
+                    <div class="social-medias">
+                        <h5>Social media:</h5>
+                        <a href="https://www.facebook.com/vilopesp" class="facebook" target="_blank" rel="external">
+                            <svg width="22" height="37" viewBox="0 0 22 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.25 1H15C12.6794 1 10.4538 1.92187 8.81282 3.56282C7.17187 5.20376 6.25 7.42936 6.25 9.75V15H1V22H6.25V36H13.25V22H18.5L20.25 15H13.25V9.75C13.25 9.28587 13.4344 8.84075 13.7626 8.51256C14.0908 8.18437 14.5359 8 15 8H20.25V1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
 
-                <a href="www.github.com">
-                    <img src="/assets/github-icon.svg" alt="Github">
-                </a>
+                        </a>
 
-            </div>
+                        <a href="www.twitter.com/_vilopesp" class="twitter" target="_blank" rel="external">
+                            <svg width="45" height="36" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Twitter">
+                                <path d="M43.1667 1.01927C41.3312 2.31394 39.299 3.30415 37.1483 3.95177C35.994 2.6245 34.4599 1.68377 32.7535 1.2568C31.0471 0.829831 29.2507 0.937232 27.6073 1.56448C25.9639 2.19172 24.5528 3.30854 23.5649 4.7639C22.5769 6.21925 22.0598 7.94292 22.0833 9.70177V11.6184C18.715 11.7058 15.3774 10.9587 12.3678 9.44388C9.35809 7.92901 6.76977 5.69332 4.83333 2.93594C4.83333 2.93594 -2.83333 20.1859 14.4167 27.8526C10.4693 30.532 5.76705 31.8755 1 31.6859C18.25 41.2693 39.3333 31.6859 39.3333 9.64427C39.3316 9.11039 39.2802 8.57783 39.18 8.05344C41.1362 6.1243 42.5166 3.68864 43.1667 1.01927V1.01927Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                        </a>
 
-            <div class="email">
-                vilopesp@hotmail.com
-            </div>
+                        <a href="www.instagram.com/_vilopesp" class="instagram" target="_blank" rel="external">
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Instagram">
+                                <path d="M27.25 1H9.75C4.91751 1 1 4.91751 1 9.75V27.25C1 32.0825 4.91751 36 9.75 36H27.25C32.0825 36 36 32.0825 36 27.25V9.75C36 4.91751 32.0825 1 27.25 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                                <path d="M25.9243 16.9732C26.1402 18.4296 25.8915 19.9171 25.2134 21.224C24.5352 22.5309 23.4623 23.5907 22.1471 24.2526C20.832 24.9146 19.3416 25.145 17.8879 24.9111C16.4343 24.6772 15.0914 23.9909 14.0503 22.9497C13.0091 21.9086 12.3228 20.5657 12.0889 19.1121C11.855 17.6584 12.0854 16.168 12.7474 14.8529C13.4093 13.5377 14.4691 12.4648 15.776 11.7866C17.0829 11.1085 18.5704 10.8598 20.0268 11.0757C21.5124 11.296 22.8878 11.9883 23.9497 13.0503C25.0117 14.1122 25.704 15.4876 25.9243 16.9732Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </a>
 
-        </section>
+                        <a href="www.github.com/vilopesp" class="github" target="_blank" rel="external">
+                            <svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Github">
+                                <path d="M24.3036 36V29.5582C24.366 28.7645 24.2588 27.9666 23.989 27.2175C23.7192 26.4685 23.2931 25.7854 22.7389 25.2138C27.9656 24.6312 33.4586 22.6504 33.4586 13.562C33.4582 11.238 32.5642 9.00311 30.9618 7.31993C31.7206 5.2867 31.6669 3.0393 30.812 1.0446C30.812 1.0446 28.8478 0.462008 24.3036 3.50812C20.4885 2.47414 16.4669 2.47414 12.6518 3.50812C8.1076 0.462008 6.14344 1.0446 6.14344 1.0446C5.28849 3.0393 5.23484 5.2867 5.99363 7.31993C4.37923 9.01559 3.48437 11.2707 3.49681 13.6119C3.49681 22.6337 8.9898 24.6145 14.2165 25.2637C13.6688 25.8296 13.2465 26.5045 12.9769 27.2444C12.7073 27.9843 12.5966 28.7727 12.6518 29.5582V36M12.6518 31.0064C4.32909 33.5032 4.41409 27.2444 1 26.0127C4.5 27 4 33.5 12.6518 31.0064Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
 
+                    <div class="email">
+                        <h5>Contact email:</h5>
+                        <a href="mailto:vilopesp@hotmail.com">vilopesp@hotmail.com</a>
+                    </div>
 
-        <!-- scripts -->
+                </div>
+            </section>
+        </main>
+
+        <!-- scripts/animations -->
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 

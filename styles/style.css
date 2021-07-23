@@ -974,18 +974,30 @@ header {
   font-size: 1.5rem;
 }
 
-.work-image {
+.works .work-image {
   max-width: 30rem;
   border-radius: 4px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   z-index: -1;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) translate3d(-1000px, 0, 0) skewX(30deg);
           transform: translate(-50%, -50%) translate3d(-1000px, 0, 0) skewX(30deg);
+}
+
+.works .work-image1 {
+  left: 27%;
+}
+
+.works .work-image2 {
+  left: 50%;
+}
+
+.works .work-image3 {
+  left: 40%;
 }
 
 .get-in {
@@ -1169,11 +1181,38 @@ header {
     display: none;
   }
   header nav {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     height: 20rem;
     width: 100%;
     background: black;
+  }
+  .work-image {
+    max-width: 20rem;
+  }
+  .works .work-image1, .works .work-image2, .works .work-image3 {
+    left: 50%;
+  }
+  .works h2,
+  .get-in-touch h2 {
+    font-size: 2.5rem;
+  }
+  .container-get-in {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20rem;
+  }
+  .container-get-in .social-medias {
+    padding-bottom: 5rem;
+  }
+  .container-get-in .social-medias h5 {
+    padding-bottom: 1.8rem;
+  }
+  .container-get-in .email h5 {
+    padding-bottom: 0.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

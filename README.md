@@ -3,7 +3,7 @@
 ## :computer: Projeto
 <p> Projeto desenvolvido durante a semana FrontWeek realizada pelo Násser Yousef Ali. 
 <br>
-É um portfólio introdutório com a apresentação de alguns trabalhos realizados anteriormente. Nele, coloquei alguns outros projetos encontrados em meu github. </p>
+É um portfólio introdutório com a apresentação de alguns trabalhos realizados anteriormente. Nele, coloquei alguns outros projetos encontrados em meu github. As imagens encotnradas nele são ilustrativas.</p>
 <br>
 
 <img alt="Homepage Portfólio" src="/assets/homepage-preview.png">

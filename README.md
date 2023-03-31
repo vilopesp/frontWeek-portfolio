@@ -11,7 +11,7 @@
 
 ## :memo: Licença
 
-<p> Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes. </p>
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
 
 ## :raising_hand: Autora
 
